@@ -1,6 +1,8 @@
 # Metroit.RakurakuKintai.Api
 RAKUS 楽楽勤怠をアプリケーションから操作します。
 
+[![NuGet](https://img.shields.io/badge/nuget-v0.1.0-blue.svg)](https://www.nuget.org/packages/Metroit.RakurakuKintai.Api)
+
 ## 使い方
 契約によって管理者から提供されたURLに記されているアカウントキーを ApiClient に設定して利用します。  
 https://rkkungfu.rakurakukintai.jp/<b>(アカウントキー)</b>/login
