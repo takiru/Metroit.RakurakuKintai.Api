@@ -10,7 +10,7 @@ namespace Metroit.RakurakuKintai.Api.Response
     {
         /// <summary>
         /// 休暇/欠勤IDを取得します。
-        //  MastersOperator::GetAvailableLeaves() で取得した 休暇/欠勤ID となります。
+        /// MastersOperator::GetAvailableLeaves() で取得した 休暇/欠勤ID となります。
         /// </summary>
         [JsonProperty("id")]
         public ulong Id { get; private set; }

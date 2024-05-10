@@ -134,7 +134,14 @@ namespace Metroit.RakurakuKintai.Api
         /// <param name="response">レスポンスオブジェクト。</param>
         protected override sealed void OnFailedRequest(RestResponse response)
         {
-            Error = JsonConvert.DeserializeObject<ErrorResponse>(response.Content);
+            try
+            {
+                Error = JsonConvert.DeserializeObject<ErrorResponse>(response.Content);
+            }
+            catch (JsonReaderException)
+            {
+                Error.SetContent(response.Content);
+            }
         }
 
         /// <summary>

@@ -30,8 +30,7 @@ namespace Metroit.RakurakuKintai.Api.Leave
         /// 休暇・欠勤申請を行います。
         /// </summary>
         /// <param name="attendanceDate">対象日。</param>
-        /// <param name="overtimeType">残業種類。</param>
-        /// <param name="time">残業時刻。</param>
+        /// <param name="takingLeaves">休暇/欠勤設定。</param>
         /// <param name="reason">申請理由。</param>
         /// <returns>申請結果。</returns>
         public Task<LeaveResponse> RequestLeaveAsync(DateTime attendanceDate, TakingLeave[] takingLeaves, string reason)
@@ -48,8 +47,7 @@ namespace Metroit.RakurakuKintai.Api.Leave
         /// 休暇・欠勤申請を行います。
         /// </summary>
         /// <param name="attendanceDate">対象日。</param>
-        /// <param name="overtimeType">残業種類。</param>
-        /// <param name="time">残業時刻。</param>
+        /// <param name="takingLeaves">休暇/欠勤設定。</param>
         /// <param name="reason">申請理由。</param>
         /// <returns>申請結果。</returns>
         public LeaveResponse RequestLeave(DateTime attendanceDate, TakingLeave[] takingLeaves, string reason)
