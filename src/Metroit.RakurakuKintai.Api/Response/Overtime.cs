@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using System;
 
 namespace Metroit.RakurakuKintai.Api.Response
 {
@@ -19,12 +18,12 @@ namespace Metroit.RakurakuKintai.Api.Response
         /// 申請前時刻を取得します。
         /// </summary>
         [JsonProperty("timeBefore")]
-        public DateTime timeBefore { get; private set; }
+        public string timeBefore { get; private set; }
 
         /// <summary>
         /// 申請後時刻を取得します。
         /// </summary>
         [JsonProperty("timeAfter")]
-        public DateTime timeAfter { get; private set; }
+        public string timeAfter { get; private set; }
     }
 }

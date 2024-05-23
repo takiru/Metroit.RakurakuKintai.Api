@@ -41,9 +41,8 @@ try
     //var res12 = client.Daily.GetRegisteredStatusOfDay(res2, new DateTime(2024, 3, 29));
 
     //// 残業申請する
-    //var res13 = client.Overtime.RequestOvertime(new DateTime(2024, 4, 2), OvertimeType.Late,
-    //    new DateTime(2024, 4, 2, 19, 0, 0), "残業申請のテスト申請");
-
+    //var res13 = client.Overtime.RequestOvertime(new DateTime(2024, 5, 23), OvertimeType.Late,
+    //    new DateTime(2024, 5, 24, 2, 30, 0), "残業申請のテスト申請");
 
     //// 休暇・欠勤申請する
     //var leaveId = res9.Where(x => x.Name == "年休").Select(x => x.Id).FirstOrDefault();
