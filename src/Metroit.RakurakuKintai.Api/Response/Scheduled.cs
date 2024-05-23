@@ -18,8 +18,8 @@ namespace Metroit.RakurakuKintai.Api.Response
         /// <summary>
         /// 勤務パターンIDを取得します。
         /// </summary>
-        [JsonProperty("workingPatternId")]
-        public int WorkingPatternId { get; private set; }
+        [JsonProperty("workingPatternId", NullValueHandling = NullValueHandling.Include)]
+        public int? WorkingPatternId { get; private set; }
 
         /// <summary>
         /// 労働時間が変更されたかどうかを取得します。
@@ -48,26 +48,26 @@ namespace Metroit.RakurakuKintai.Api.Response
         /// <summary>
         /// 勤務パターンを取得します。
         /// </summary>
-        [JsonProperty("workingPattern")]
+        [JsonProperty("workingPattern", NullValueHandling = NullValueHandling.Include)]
         public WorkingPattern WorkingPattern { get; private set; }
 
         /// <summary>
         /// 就業時刻を取得します。
         /// </summary>
-        [JsonProperty("workingTime")]
+        [JsonProperty("workingTime", NullValueHandling = NullValueHandling.Include)]
         public WorkingTime WorkingTime { get; private set; }
 
         /// <summary>
         /// 早残となる終了時刻を取得します。
         /// </summary>
-        [JsonProperty("earlyWorkableTime")]
-        public DateTime EarlyWorkableTime { get; private set; }
+        [JsonProperty("earlyWorkableTime", NullValueHandling = NullValueHandling.Include)]
+        public DateTime? EarlyWorkableTime { get; private set; }
 
         /// <summary>
         /// 遅残となる開始時刻を取得します。
         /// </summary>
-        [JsonProperty("lateWorkableTime")]
-        public DateTime LateWorkableTime { get; private set; }
+        [JsonProperty("lateWorkableTime", NullValueHandling = NullValueHandling.Include)]
+        public DateTime? LateWorkableTime { get; private set; }
 
         /// <summary>
         /// 休憩時刻を取得します。
@@ -90,7 +90,7 @@ namespace Metroit.RakurakuKintai.Api.Response
         /// <summary>
         /// 振替休日を取得します。何もないとnull. DateTimeか？
         /// </summary>
-        [JsonProperty("holidayExchange")]
+        [JsonProperty("holidayExchange", NullValueHandling = NullValueHandling.Include)]
         public int? HolidayExchange { get; private set; }
     }
 }

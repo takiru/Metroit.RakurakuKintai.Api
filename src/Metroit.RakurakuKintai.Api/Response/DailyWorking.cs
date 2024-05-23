@@ -54,7 +54,7 @@ namespace Metroit.RakurakuKintai.Api.Response
         /// <summary>
         /// 勤務パターンによる就業時刻を取得します。
         /// </summary>
-        [JsonProperty("scheduledWorkingTime")]
+        [JsonProperty("scheduledWorkingTime", NullValueHandling = NullValueHandling.Include)]
         public WorkingTime ScheduledWorkingTime { get; private set; }
 
         /// <summary>
@@ -114,7 +114,7 @@ namespace Metroit.RakurakuKintai.Api.Response
         /// <summary>
         /// 勤務パターンを取得します。
         /// </summary>
-        [JsonProperty("workingPattern")]
+        [JsonProperty("workingPattern", NullValueHandling = NullValueHandling.Include)]
         public WorkingPattern WorkingPattern { get; private set; }
 
         /// <summary>
